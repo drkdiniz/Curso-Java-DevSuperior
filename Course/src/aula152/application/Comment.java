@@ -1,10 +1,9 @@
-package Entities;
+package aula152.application;
 
 public class Comment {
 	private String text;
 
 	public Comment(String text) {
-		super();
 		this.text = text;
 	}
 
@@ -17,7 +16,5 @@ public class Comment {
 	}
 	
 	
-	
-	
-	
+
 }
