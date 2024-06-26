@@ -1,9 +1,9 @@
 package entities;
 
 public class Employee {
-	protected String name;
-	protected Integer hours;
-	protected Double valuePerHour;
+	private String name;
+	private Integer hours;
+	private Double valuePerHour;
 	
 	
 	public Employee() {

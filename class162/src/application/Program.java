@@ -22,7 +22,7 @@ public class Program {
 		for (int i = 0; i < n; i++) {
 			System.out.printf("Employee #%d data: ", i + 1);
 			System.out.print("Outsourced(y/n)? ");
-			String outsourced = sc.next().toUpperCase();
+			String outsourced = sc.next();
 			sc.nextLine();
 			System.out.print("Name: ");
 			String name = sc.nextLine();
@@ -31,7 +31,7 @@ public class Program {
 			System.out.print("Value per hour: ");
 			double valuePerHour = sc.nextDouble();
 			
-			if (outsourced.equals("N")) {
+			if (outsourced.equalsIgnoreCase("N")) {
 				emp.add(new Employee(name, hours, valuePerHour ));
 			}
 			else {
