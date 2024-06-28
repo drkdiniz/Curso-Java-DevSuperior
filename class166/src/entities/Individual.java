@@ -30,6 +30,9 @@ public class Individual extends TaxPayer{
 		else {
 			imp = super.getAnnualIncome() * 0.25 - healthExpenditures * 0.5;
 		}
+		if (imp < 0.0) {
+			imp = 0.0;
+		}
 		return imp;
 	}
 	
